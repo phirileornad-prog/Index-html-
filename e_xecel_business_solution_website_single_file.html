@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eXecel Business Solution</title>
+  <meta name="description" content="eXecel Business Solution — Mobile Money (MTN, Airtel), Bank Agents (Zanaco, FNB), Professional Insurance, Typing & Printing."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand: #1f4bc9; --accent: #f6c453; }
+    html, body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(10px); }
+    .gradient { background: linear-gradient(135deg, #eef2ff, #f8fafc 40%, #fff); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(31,75,201,0.08); }
+  </style>
+</head>
+<body class="gradient text-slate-800">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 glass border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <!-- LOGO (Inline SVG) -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-sm">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#1f4bc9"/>
+              <stop offset="1" stop-color="#4f46e5"/>
+            </linearGradient>
+          </defs>
+          <rect rx="14" width="64" height="64" fill="url(#g1)"/>
+          <path d="M18 40c5-9 13-18 28-18" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M22 28l8 8-8 8" stroke="#f6c453" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="text-xl font-extrabold tracking-tight">eXecel</div>
+          <div class="-mt-1 text-[11px] uppercase tracking-[0.18em] text-slate-500">Business Solution</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-[color:var(--brand)]">Services</a>
+        <a href="#transfer" class="hover:text-[color:var(--brand)]">Send / Request</a>
+        <a href="#insurance" class="hover:text-[color:var(--brand)]">Insurance</a>
+        <a href="#contact" class="hover:text-[color:var(--brand)]">Contact</a>
+      </nav>
+
+      <a href="#transfer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-[color:var(--brand)] text-white text-sm font-semibold shadow-soft hover:opacity-90">
+        Start Now
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[12px] font-medium text-[color:var(--brand)]">Fintech • Insurance • Printing</span>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight">
+          Trusted Mobile Money & Insurance — fast, simple, secure.
+        </h1>
+        <p class="mt-4 text-slate-600 max-w-xl">
+          We serve MTN Money, Airtel Money, Zanaco & FNB agent services, professional insurance, plus typing and printing — all under one roof.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#transfer" class="inline-flex items-center px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-white font-semibold shadow-soft">Send / Request Money</a>
+          <a href="#services" class="inline-flex items-center px-5 py-3 rounded-2xl bg-white border border-slate-200 font-semibold hover:border-slate-300">Explore Services</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-soft">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-blue-50 border border-blue-100">
+              <div class="text-xs text-slate-600">Mobile Money</div>
+              <div class="text-lg font-semibold">MTN Money</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-red-50 border border-red-100">
+              <div class="text-xs text-slate-600">Mobile Money</div>
+              <div class="text-lg font-semibold">Airtel Money</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
+              <div class="text-xs text-slate-600">Bank Agent</div>
+              <div class="text-lg font-semibold">Zanaco</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+              <div class="text-xs text-slate-600">Bank Agent</div>
+              <div class="text-lg font-semibold">FNB</div>
+            </div>
+          </div>
+          <div class="mt-4 text-xs text-slate-500">
+            * Note: Online forms submit requests to the business — no instant transfers on the website.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Our Services</h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">Reliable payments, agent banking, insurance assistance, and office services.</p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Mobile Money</div>
+          <h3 class="mt-1 text-xl font-bold">MTN Money</h3>
+          <p class="mt-2 text-sm text-slate-600">Cash-in, cash-out, bill payments, and transfers.</p>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Mobile Money</div>
+          <h3 class="mt-1 text-xl font-bold">Airtel Money</h3>
+          <p class="mt-2 text-sm text-slate-600">Cash-in, cash-out, bill payments, and transfers.</p>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Bank Agent</div>
+          <h3 class="mt-1 text-xl font-bold">Zanaco</h3>
+          <p class="mt-2 text-sm text-slate-600">Deposits, withdrawals, and balances via our agent desk.</p>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Bank Agent</div>
+          <h3 class="mt-1 text-xl font-bold">FNB</h3>
+          <p class="mt-2 text-sm text-slate-600">Deposits, withdrawals, and service requests.</p>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Insurance</div>
+          <h3 class="mt-1 text-xl font-bold">Professional Insurance</h3>
+          <p class="mt-2 text-sm text-slate-600">Request quotes for vehicle, business, life, and property cover.</p>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-slate-500">Office</div>
+          <h3 class="mt-1 text-xl font-bold">Typing & Printing</h3>
+          <p class="mt-2 text-sm text-slate-600">Fast document preparation, photocopying, and prints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFER / REQUEST FORM (No passwords collected for security) -->
+  <section id="transfer" class="py-16 sm:py-20 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-extrabold">Send / Request Money</h2>
+        <p class="mt-2 text-slate-600">Fill the form and we will contact you to complete the transaction. <span class="font-semibold">For your safety, do not enter any PIN or password.</span></p>
+      </div>
+
+      <form id="transferForm" class="mt-8 grid gap-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-soft">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="text-sm font-medium">Full Name</label>
+            <input required name="name" type="text" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" placeholder="e.g. John Zulu" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Phone Number</label>
+            <input required name="phone" type="tel" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" placeholder="e.g. +260 97 123 4567" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div>
+            <label class="text-sm font-medium">Service</label>
+            <select required name="service" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]">
+              <option value="MTN Money">MTN Money</option>
+              <option value="Airtel Money">Airtel Money</option>
+              <option value="Zanaco">Zanaco</option>
+              <option value="FNB">FNB</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Action</label>
+            <select required name="action" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]">
+              <option>Cash-in (Deposit)</option>
+              <option>Cash-out (Withdraw)</option>
+              <option>Bill Payment</option>
+              <option>Transfer</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Amount (ZMW)</label>
+            <input required name="amount" type="number" min="1" step="1" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" placeholder="e.g. 500" />
+          </div>
+        </div>
+
+        <div>
+          <label class="text-sm font-medium">Notes (optional)</label>
+          <textarea name="notes" rows="3" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" placeholder="e.g. Transfer to 097xxxxxxx"></textarea>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <input id="consent" type="checkbox" required class="mt-1 rounded border-slate-300" />
+          <label for="consent" class="text-sm text-slate-600">I understand this form sends a request to eXecel Business Solution. No passwords or PINs will ever be requested online.</label>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <button type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-white font-semibold shadow-soft">Submit Request</button>
+          <p id="transferMsg" class="text-sm text-slate-600"></p>
+        </div>
+      </form>
+
+      <!-- HOW IT WORKS -->
+      <div class="mt-6 text-xs text-slate-500 max-w-3xl">
+        <p><strong>How it works:</strong> Your details are packaged into an email and opened in your mail app (or webmail) to send to us. You’ll receive a confirmation reply from our team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSURANCE QUOTE FORM -->
+  <section id="insurance" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-extrabold">Insurance — Get a Quote</h2>
+        <p class="mt-2 text-slate-600">Tell us what you need and we’ll prepare options and pricing.</p>
+      </div>
+
+      <form id="insuranceForm" class="mt-8 grid gap-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-soft">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="text-sm font-medium">Full Name</label>
+            <input required name="name" type="text" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Phone Number</label>
+            <input required name="phone" type="tel" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" />
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="text-sm font-medium">Insurance Type</label>
+            <select name="type" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]">
+              <option>Motor</option>
+              <option>Business</option>
+              <option>Property</option>
+              <option>Life</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Estimated Value (ZMW)</label>
+            <input name="value" type="number" min="1" step="1" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" />
+          </div>
+        </div>
+        <div>
+          <label class="text-sm font-medium">Details</label>
+          <textarea name="details" rows="3" class="mt-2 w-full rounded-2xl border-slate-300 focus:ring-[color:var(--brand)] focus:border-[color:var(--brand)]" placeholder="e.g. Toyota Hilux 2018, comprehensive cover"></textarea>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <button type="submit" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[color:var(--brand)] text-white font-semibold shadow-soft">Request Quote</button>
+          <p id="insuranceMsg" class="text-sm text-slate-600"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 sm:py-20 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500">Email</div>
+          <a href="mailto:execelbusiness.zm@gmail.com" class="text-lg font-semibold text-[color:var(--brand)]">execelbusiness.zm@gmail.com</a>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500">Phone</div>
+          <div class="text-lg font-semibold">+260 97 000 0000</div>
+        </div>
+        <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500">Address</div>
+          <div class="text-lg font-semibold">Lusaka, Zambia</div>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">These are placeholders — replace with your official details anytime.</p>
+    </div>
+  </section>
+
+  <footer class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© <span id="year"></span> eXecel Business Solution. All rights reserved.</div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-[11px] text-amber-700">No passwords collected online</span>
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[11px] text-blue-700">Secure request-only forms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // YEAR
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ====== CONFIG ======
+    // Chosen placeholder email & phone — change anytime
+    const OWNER_EMAIL = 'execelbusiness.zm@gmail.com';
+    const OWNER_PHONE = '+260 97 000 0000';
+
+    // UTIL — Build a mailto with subject & body
+    function openMailTo(subject, body) {
+      const link = document.createElement('a');
+      link.href = `mailto:${encodeURIComponent(OWNER_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+
+    // TRANSFER FORM HANDLER
+    document.getElementById('transferForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const data = Object.fromEntries(fd.entries());
+      const subject = `[Transfer Request] ${data.service} • ${data.action} • ZMW ${data.amount}`;
+      const body = `New transfer/request from eXecel Business Solution website.\n\n`
+        + `Name: ${data.name}\n`
+        + `Phone: ${data.phone}\n`
+        + `Service: ${data.service}\n`
+        + `Action: ${data.action}\n`
+        + `Amount: ZMW ${data.amount}\n`
+        + `Notes: ${data.notes || '-'}\n\n`
+        + `Consent: user confirmed.\n`;
+
+      openMailTo(subject, body);
+      document.getElementById('transferMsg').textContent = 'Your email draft has been opened. Please press Send.';
+      e.target.reset();
+      document.getElementById('transferMsg').classList.add('text-[color:var(--brand)]');
+    });
+
+    // INSURANCE FORM HANDLER
+    document.getElementById('insuranceForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const data = Object.fromEntries(fd.entries());
+      const subject = `[Insurance Quote] ${data.type} • ${data.name}`;
+      const body = `New insurance quote request from eXecel Business Solution website.\n\n`
+        + `Name: ${data.name}\n`
+        + `Phone: ${data.phone}\n`
+        + `Type: ${data.type}\n`
+        + `Estimated Value: ZMW ${data.value || '-'}\n`
+        + `Details: ${data.details || '-'}\n`;
+
+      openMailTo(subject, body);
+      document.getElementById('insuranceMsg').textContent = 'Your email draft has been opened. Please press Send.';
+      e.target.reset();
+      document.getElementById('insuranceMsg').classList.add('text-[color:var(--brand)]');
+    });
+  </script>
+</body>
+</html>
